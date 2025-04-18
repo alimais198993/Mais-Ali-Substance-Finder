@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>LCMS Substance Finder</title>
+    <style>
+        body {
+            font-family: 'Arial'; direction: rtl; background-color: #f8f9fa;
+            padding: 30px;
+        }
+        h1 {
+            text-align: center; color: #004d7a;
+        }
+        #controls {
+            display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;
+        }
+        #searchBox {
+            width: 60%; padding: 10px; font-size: 16px;
+        }
+        .card {
+            display: inline-block; background-color: #ffffff; border: 1px solid #ccc;
+            padding: 15px; margin: 10px; cursor: pointer;
+            border-radius: 8px; box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+            min-width: 160px; text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">LCMS Substance Finder</h1>
+
+    <div id="controls">
+        <button id="langBtn" onclick="toggleLanguage()">العربية</button>
+        <input type="text" id="searchBox" placeholder="ابحث عن مادة..." oninput="searchSubstances()">
+    </div>
+
+    <div id="cardsContainer"></div>
+
+    <script src="substances_script_full.js"></script>
+    <script>
+        let currentLang = "ar";
+
+        function toggleLanguage() {
+            currentLang = currentLang === "en" ? "ar" : "en";
+            document.getElementById("langBtn").innerText = currentLang === "en" ? "العربية" : "English";
+            document.getElementById("title").innerText = currentLang === "en" ? "LCMS Substance Finder" : "باحث المواد التحليلية";
+            document.getElementById("searchBox").placeholder = currentLang === "en" ? "Search for a substance..." : "ابحث عن مادة...";
+            renderCards(filteredSubstances);
+        }
+
+        let filteredSubstances = [...substances];
+
+        function searchSubstances() {
+            const query = document.getElementById("searchBox").value.toLowerCase();
+            const results = substances.filter(s => s.name.toLowerCase().includes(query));
+            renderCards(results);
+        }
+
+        function renderCards(list) {
+            const container = document.getElementById("cardsContainer");
+            container.innerHTML = "";
+            list.forEach(function(sub) {
+                const card = document.createElement("div");
+                card.className = "card " + sub.category;
+                card.innerText = sub.name;
+                card.onclick = function() {
+                    const fileName = sub.name.toLowerCase().replaceAll(" ", "_") + "_detailed_card.html";
+                    window.location.href = "substances/" + fileName;
+                };
+                container.appendChild(card);
+            });
+        }
+
+        renderCards(filteredSubstances);
+    </script>
+</body>
+</html>
