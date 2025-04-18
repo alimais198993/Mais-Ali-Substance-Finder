@@ -19,7 +19,7 @@ const substances = [
     { name: "Cyclobenzaprine", category: "Prescription" },
     { name: "Cyanide", category: "Toxins" },
     { name: "Chloroform", category: "Toxins" },
-    { name: "Creatinine", category: "Other" }
+    { name: "Creatinine", category: "Other" },
     { name: "Morphine", category: "Drugs" },
     { name: "Heroin", category: "Drugs" },
     { name: "Fentanyl", category: "Drugs" },
