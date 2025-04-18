@@ -39,6 +39,31 @@ input[type="text"] {
     cursor: pointer;
 }
 
+.extra-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.extra-buttons button {
+  margin: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #5a9bd5;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.extra-buttons button:hover {
+  background-color: #4176a0;
+}
+
+.extra-buttons button:hover {
+  background-color: #4176a0;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
