@@ -29,7 +29,7 @@ const substances = [
     { name: "Oxycodone", category: "Drugs" },
     { name: "Flunitrazepam", category: "Prescription" },
     { name: "Hydrocodone", category: "Drugs" },
-    { name: "Alprazolam 2", category: "Prescription" }
+    { name: "alprazolam", category: "Prescription" }
 ];
 
 
