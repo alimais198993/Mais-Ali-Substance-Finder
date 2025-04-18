@@ -1,5 +1,5 @@
-
-<head><meta charset="UTF-8"></head><pre style="caret-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; widows: auto; word-spacing: 0px; -webkit-tap-highlight-color: rgba(26, 26, 26, 0.3); -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; text-decoration: none; overflow-wrap: break-word; white-space: pre-wrap;">const substances = [
+<script>
+const substances = [
     { name: "Chloral Hydrate", category: "Toxins" },
     { name: "Temazepam", category: "Prescription" },
     { name: "Zolpidem", category: "Prescription" },
@@ -29,10 +29,8 @@
     { name: "Creatinine", category: "Other" },
     { name: "Oxycodone", category: "Drugs" },
     { name: "Flunitrazepam", category: "Prescription" },
-    { name: "Hydrocodone", category: "Drugs" },
-    { name: "alprazolam", category: "Prescription" }
+    { name: "Hydrocodone", category: "Drugs" }
 ];
-
 
 let currentLang = "en";
 
@@ -47,29 +45,25 @@ function toggleLanguage() {
 let filteredSubstances = [...substances];
 
 function filterCategory(category) {
-    if (category === "All") {
-        filteredSubstances = [...substances];
-    } else {
-        filteredSubstances = substances.filter(s =&gt; s.category === category);
-    }
+    filteredSubstances = (category === "All") ? [...substances] : substances.filter(s => s.category === category);
     renderCards(filteredSubstances);
 }
 
 function searchSubstances() {
     const query = document.getElementById("searchBox").value.toLowerCase();
-    const results = substances.filter(s =&gt; s.name.toLowerCase().includes(query));
+    const results = substances.filter(s => s.name.toLowerCase().includes(query));
     renderCards(results);
 }
 
 function renderCards(list) {
     const container = document.getElementById("cardsContainer");
     container.innerHTML = "";
-    list.forEach(sub =&gt; {
+    list.forEach(sub => {
         const card = document.createElement("div");
         card.className = `card ${sub.category}`;
         card.innerText = sub.name;
-        card.onclick = () =&gt; {
-            const fileName = sub.name.toLowerCase().replaceAll(" ", "_") + ".html";
+        card.onclick = () => {
+            const fileName = sub.name.toLowerCase().replaceAll(" ", "_") + "_Detailed_Card.html";
             window.location.href = `substances/${fileName}`;
         };
         container.appendChild(card);
@@ -77,5 +71,5 @@ function renderCards(list) {
 }
 
 // Initial render
-renderCards(filteredSubstances);</pre>
-;
+renderCards(filteredSubstances);
+</script>
