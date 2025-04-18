@@ -21,15 +21,15 @@ const substances = [
     { name: "Chloroform", category: "Toxins" },
     { name: "Creatinine", category: "Other" }
     { name: "Morphine", category: "Drugs" },
-{ name: "Heroin", category: "Drugs" },
-{ name: "Fentanyl", category: "Drugs" },
-{ name: "Diazepam", category: "Prescription" },
-{ name: "Lorazepam", category: "Prescription" },
-{ name: "Midazolam", category: "Prescription" },
-{ name: "Ketamine", category: "Drugs" },
-{ name: "Tramadol", category: "Prescription" },
-{ name: "Methadone", category: "Drugs" },
-{ name: "Phenobarbital", category: "Prescription" }
+    { name: "Heroin", category: "Drugs" },
+    { name: "Fentanyl", category: "Drugs" },
+    { name: "Diazepam", category: "Prescription" },
+    { name: "Lorazepam", category: "Prescription" },
+    { name: "Midazolam", category: "Prescription" },
+    { name: "Ketamine", category: "Drugs" },
+    { name: "Tramadol", category: "Prescription" },
+    { name: "Methadone", category: "Drugs" },
+    { name: "Phenobarbital", category: "Prescription" }
 ];
 
 let currentLang = "en";
