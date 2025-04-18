@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -40,28 +39,26 @@ input[type="text"] {
 }
 
 .extra-buttons {
-  text-align: center;
-  margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .extra-buttons button {
-  margin: 8px;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 6px;
-  background-color: #5a9bd5;
-  color: white;
-  border: none;
-  transition: background-color 0.3s;
+    margin: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #5a9bd5;
+    color: white;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .extra-buttons button:hover {
-  background-color: #4176a0;
-}
-
-.extra-buttons button:hover {
-  background-color: #4176a0;
+    background-color: #4176a0;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cards {
