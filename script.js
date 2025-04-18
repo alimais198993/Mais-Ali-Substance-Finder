@@ -1,25 +1,6 @@
 
 const substances = [
     { name: "Amphetamine", category: "Drugs" },
-    { name: "Methamphetamine", category: "Drugs" },
-    { name: "MDA", category: "Drugs" },
-    { name: "MDMA", category: "Drugs" },
-    { name: "Ephedrine", category: "Precursors" },
-    { name: "Pseudoephedrine", category: "Precursors" },
-    { name: "BMK", category: "Precursors" },
-    { name: "PMK", category: "Precursors" },
-    { name: "Fenetylline", category: "Drugs" },
-    { name: "Methcathinone", category: "Drugs" },
-    { name: "Bupropion", category: "Prescription" },
-    { name: "Trazodone", category: "Prescription" },
-    { name: "Sertraline", category: "Prescription" },
-    { name: "Clonazepam", category: "Prescription" },
-    { name: "Diazepam", category: "Prescription" },
-    { name: "Alprazolam", category: "Prescription" },
-    { name: "Flunitrazepam", category: "Prescription" },
-    { name: "Lorazepam", category: "Prescription" },
-    { name: "Midazolam", category: "Prescription" },
-    { name: "Temazepam", category: "Prescription" },
     { name: "Creatinine", category: "Other" }
 ];
 
