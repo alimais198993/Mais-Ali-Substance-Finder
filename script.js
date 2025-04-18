@@ -1,24 +1,6 @@
 
 const substances = [
     { name: "Amphetamine", category: "Drugs" },
-    { name: "Arsenic", category: "Toxins" },
-    { name: "Atropine", category: "Prescription" },
-    { name: "Benzoylecgonine", category: "Drugs" },
-    { name: "Bromazepam", category: "Prescription" },
-    { name: "BMK", category: "Precursors" },
-    { name: "Butalbital", category: "Prescription" },
-    { name: "Caffeine", category: "Prescription" },
-    { name: "Cannabidiol", category: "Drugs" },
-    { name: "Cannabinol", category: "Drugs" },
-    { name: "Carisoprodol", category: "Prescription" },
-    { name: "Chloral Hydrate", category: "Toxins" },
-    { name: "Chlorpromazine", category: "Prescription" },
-    { name: "Clonazepam", category: "Prescription" },
-    { name: "Cocaine", category: "Drugs" },
-    { name: "Codeine", category: "Prescription" },
-    { name: "Cyclobenzaprine", category: "Prescription" },
-    { name: "Cyanide", category: "Toxins" },
-    { name: "Chloroform", category: "Toxins" },
     { name: "Creatinine", category: "Other" }
 ];
 
