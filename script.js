@@ -56,7 +56,7 @@ function renderCards(list) {
         const card = document.createElement("div");
         card.className = `card ${sub.category}`;
         card.innerText = sub.name;
-        card.onclick = () => alert(`${sub.name} profile coming soon...`);
+        card.onclick = () => window.location.href = `substances/${sub.name.toLowerCase()}.html`;
         container.appendChild(card);
     });
 }
