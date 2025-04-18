@@ -10,6 +10,16 @@ const substances = [
     { name: "PMK", category: "Precursors" },
     { name: "Fenetylline", category: "Drugs" },
     { name: "Methcathinone", category: "Drugs" },
+    { name: "Bupropion", category: "Prescription" },
+    { name: "Trazodone", category: "Prescription" },
+    { name: "Sertraline", category: "Prescription" },
+    { name: "Clonazepam", category: "Prescription" },
+    { name: "Diazepam", category: "Prescription" },
+    { name: "Alprazolam", category: "Prescription" },
+    { name: "Flunitrazepam", category: "Prescription" },
+    { name: "Lorazepam", category: "Prescription" },
+    { name: "Midazolam", category: "Prescription" },
+    { name: "Temazepam", category: "Prescription" },
     { name: "Creatinine", category: "Other" }
 ];
 
