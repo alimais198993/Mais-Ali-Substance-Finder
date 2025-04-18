@@ -1,6 +1,15 @@
 
 const substances = [
     { name: "Amphetamine", category: "Drugs" },
+    { name: "Methamphetamine", category: "Drugs" },
+    { name: "MDA", category: "Drugs" },
+    { name: "MDMA", category: "Drugs" },
+    { name: "Ephedrine", category: "Precursors" },
+    { name: "Pseudoephedrine", category: "Precursors" },
+    { name: "BMK", category: "Precursors" },
+    { name: "PMK", category: "Precursors" },
+    { name: "Fenetylline", category: "Drugs" },
+    { name: "Methcathinone", category: "Drugs" },
     { name: "Creatinine", category: "Other" }
 ];
 
