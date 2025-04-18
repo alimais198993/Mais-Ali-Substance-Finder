@@ -11,7 +11,7 @@ const substances = [
     { name: "Cannabidiol", category: "Drugs" },
     { name: "Cannabinol", category: "Drugs" },
     { name: "Carisoprodol", category: "Prescription" },
-    { name: "Chloral Hydrate", category: "Toxins" },
+    { name: "chloral_hydrate", category: "Toxins" },
     { name: "Chlorpromazine", category: "Prescription" },
     { name: "Clonazepam", category: "Prescription" },
     { name: "Cocaine", category: "Drugs" },
