@@ -24,6 +24,7 @@ const substances = [
     { name: "Buprenorphine", category: "Opioids", color: "#cce5ff" },
     { name: "Naloxone", category: "Opioids", color: "#cce5ff" },
     { name: "Naltrexone", category: "Opioids", color: "#cce5ff" },
+    { name: "BMK", category: "Precursors", color: "#f0e68c" },
     { name: "Fenetylline", category: "Drugs", color: "#f1948a" }
 ];
 
