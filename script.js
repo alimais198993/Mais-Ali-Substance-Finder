@@ -226,13 +226,20 @@ function searchSubstances() {
 function renderCards(list) {
     const container = document.getElementById("cardsContainer");
     container.innerHTML = "";
-    list.forEach(sub => {
+
+    const start = (currentPage - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    const paginatedList = list.slice(start, end);
+
+    paginatedList.forEach(sub => {
         const card = document.createElement("div");
         card.className = `card ${sub.category}`;
         card.innerText = sub.name;
         card.onclick = () => window.location.href = `substances/${sub.name.toLowerCase()}.html`;
         container.appendChild(card);
     });
+
+    renderPagination(list.length);
 }
 
 // Initial render
