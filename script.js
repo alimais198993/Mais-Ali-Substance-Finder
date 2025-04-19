@@ -217,12 +217,14 @@ function filterCategory(category) {
     } else {
         filteredSubstances = substances.filter(s => s.category === category);
     }
+    currentPage = 1; // نبدأ من الصفحة الأولى
     renderCards(filteredSubstances);
 }
 
 function searchSubstances() {
     const query = document.getElementById("searchBox").value.toLowerCase();
     const results = substances.filter(s => s.name.toLowerCase().includes(query));
+    currentPage = 1; // نبدأ من الصفحة الأولى
     renderCards(results);
 }
 
