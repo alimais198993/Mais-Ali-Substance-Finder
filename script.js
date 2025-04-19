@@ -15,6 +15,7 @@ const substances = [
     { name: "Methylphenidate", category: "Stimulants", color: "#ffcccb" },
     { name: "Modafinil", category: "Stimulants", color: "#ffcccb" },
     { name: "Morphine", category: "Opioids", color: "#cce5ff" },
+    { name: "Codeine", category: "Opioids", color: "#cce5ff" },
     { name: "Fenetylline", category: "Drugs", color: "#f1948a" }
 ];
 
