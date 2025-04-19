@@ -12,6 +12,7 @@ const substances = [
     { name: "Cathinone", category: "Stimulants", color: "#ffcccb" },
     { name: "Methcathinone", category: "Stimulants", color: "#ffcccb" },
     { name: "Bupropion", category: "Antidepressants", color: "#ffe0b3" },
+    { name: "Methylphenidate", category: "Stimulants", color: "#ffcccb" },
     { name: "Fenetylline", category: "Drugs", color: "#f1948a" }
 ];
 
