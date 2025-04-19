@@ -18,6 +18,7 @@ const substances = [
     { name: "Codeine", category: "Opioids", color: "#cce5ff" },
     { name: "Heroin", category: "Opioids", color: "#cce5ff" },
     { name: "Oxycodone", category: "Opioids", color: "#cce5ff" },
+    { name: "Fentanyl", category: "Opioids", color: "#cce5ff" },
     { name: "Fenetylline", category: "Drugs", color: "#f1948a" }
 ];
 
