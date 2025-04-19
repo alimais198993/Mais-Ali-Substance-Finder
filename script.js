@@ -37,6 +37,8 @@ const substances = [
     { name: "Diazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "Alprazolam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "Lorazepam", category: "Benzodiazepines", color: "#e6ccff" },
+    { name: "Oxazepam", category: "Benzodiazepines", color: "#e6ccff" },
+    { name: "Clonazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "Fenetylline", category: "Drugs", color: "#f1948a" }
 ];
 
