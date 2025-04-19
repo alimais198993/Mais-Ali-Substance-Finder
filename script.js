@@ -7,7 +7,8 @@ const substances = [
     { name: "Methamphetamine", category: "Stimulants", color: "#ffcccb" },
     { name: "MDA", category: "Stimulants", color: "#ffcccb" },
     { name: "MDMA", category: "Stimulants", color: "#ffcccb" },
-    { name: "MDEA", category: "Stimulants", color: "#ffcccb" }
+    { name: "MDEA", category: "Stimulants", color: "#ffcccb" },
+    { name: "Ephedrine", category: "Stimulants", color: "#ffcccb" }
 ];
 
 let currentLang = "en";
