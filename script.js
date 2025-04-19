@@ -195,6 +195,8 @@ const substances = [
 ];
 
 let currentLang = "en";
+let currentPage = 1;
+const itemsPerPage = 20;
 
 function toggleLanguage() {
     currentLang = currentLang === "en" ? "ar" : "en";
@@ -235,3 +237,13 @@ function renderCards(list) {
 
 // Initial render
 renderCards(filteredSubstances);
+
+function filterByLetter(letter) {
+    if (letter === "All") {
+        renderCards(substances);
+        return;
+    }
+
+    const results = substances.filter(s => s.name.toLowerCase().startsWith(letter.toLowerCase()));
+    renderCards(results);
+}
