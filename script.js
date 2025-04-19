@@ -3,10 +3,10 @@ let currentPage = 1;
 const itemsPerPage = 20;
 
 const substances = [
-    { name: "Amphetamine", category: "Drugs", color: "#f1948a" },
-    { name: "Methamphetamine", category: "Drugs", color: "#f1948a" },
+    { name: "Amphetamine", category: "Stimulants", color: "#ffcccb" },
+    { name: "Methamphetamine", category: "Stimulants", color: "#ffcccb" },
     { name: "MDA", category: "Stimulants", color: "#ffcccb" },
-    { name: "MDMA", category: "Drugs", color: "#f1948a" },
+    { name: "MDMA", category: "Stimulants", color: "#ffcccb" },
     { name: "MDEA", category: "Stimulants", color: "#ffcccb" }
 ];
 
