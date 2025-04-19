@@ -244,26 +244,24 @@ function renderCards(list) {
         container.appendChild(card);
     });
 
-    renderPagination(list.length);
-}
 function renderPagination(totalItems) {
-    const paginationContainer = document.getElementById("pagination");
-    paginationContainer.innerHTML = "";
-
+    const itemsPerPage = 20;
     const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+    const paginationContainer = document.getElementById("paginationContainer");
+    paginationContainer.innerHTML = ""; // تنظيف الأزرار القديمة
 
     for (let i = 1; i <= totalPages; i++) {
         const btn = document.createElement("button");
         btn.innerText = i;
-        btn.className = (i === currentPage) ? "active-page" : "";
-        btn.onclick = () => {
-            currentPage = i;
-            renderCards(filteredSubstances);
-        };
+        if (i === currentPage) {
+            btn.classList.add("active");
+        }
+        btn.onclick = () => goToPage(i);
         paginationContainer.appendChild(btn);
     }
 }
-// Initial render
+    // Initial render
 renderCards(filteredSubstances);
 
 function filterByLetter(letter) {
