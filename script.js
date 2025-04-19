@@ -1,4 +1,3 @@
-
 let currentPage = 1;
 const itemsPerPage = 20;
 
@@ -24,7 +23,11 @@ function toggleLanguage() {
 }
 
 function filterCategory(category) {
-    filteredSubstances = category === "All" ? [...substances] : substances.filter(s => s.category === category);
+    if (category === "All") {
+        filteredSubstances = [...substances];
+    } else {
+        filteredSubstances = substances.filter(s => s.category === category);
+    }
     currentPage = 1;
     renderCards(filteredSubstances);
 }
@@ -46,9 +49,8 @@ function renderCards(list) {
 
     paginatedList.forEach(sub => {
         const card = document.createElement("div");
-        card.className = "card";
+        card.className = `card ${sub.category}`;
         card.innerText = sub.name;
-        card.style.backgroundColor = sub.color;
         card.onclick = () => window.location.href = `substances/${sub.name.toLowerCase()}.html`;
         container.appendChild(card);
     });
@@ -76,11 +78,18 @@ function goToPage(page) {
 }
 
 function filterByLetter(letter) {
-    const results = letter === "All"
-        ? substances
-        : substances.filter(s => s.name.toLowerCase().startsWith(letter.toLowerCase()));
+    if (letter === "All") {
+        currentPage = 1;
+        renderCards(substances);
+        return;
+    }
+
+    const results = substances.filter(s =>
+        s.name.toLowerCase().startsWith(letter.toLowerCase())
+    );
     currentPage = 1;
     renderCards(results);
 }
 
+// Initial render
 renderCards(filteredSubstances);
