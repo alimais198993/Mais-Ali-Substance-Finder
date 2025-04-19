@@ -241,7 +241,23 @@ function renderCards(list) {
 
     renderPagination(list.length);
 }
+function renderPagination(totalItems) {
+    const paginationContainer = document.getElementById("pagination");
+    paginationContainer.innerHTML = "";
 
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+    for (let i = 1; i <= totalPages; i++) {
+        const btn = document.createElement("button");
+        btn.innerText = i;
+        btn.className = (i === currentPage) ? "active-page" : "";
+        btn.onclick = () => {
+            currentPage = i;
+            renderCards(filteredSubstances);
+        };
+        paginationContainer.appendChild(btn);
+    }
+}
 // Initial render
 renderCards(filteredSubstances);
 
