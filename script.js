@@ -268,10 +268,14 @@ renderCards(filteredSubstances);
 
 function filterByLetter(letter) {
     if (letter === "All") {
+        currentPage = 1;
         renderCards(substances);
         return;
     }
 
-    const results = substances.filter(s => s.name.toLowerCase().startsWith(letter.toLowerCase()));
+    const results = substances.filter(s =>
+        s.name.toLowerCase().startsWith(letter.toLowerCase())
+    );
+    currentPage = 1;
     renderCards(results);
 }
