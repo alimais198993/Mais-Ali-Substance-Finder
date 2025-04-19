@@ -79,7 +79,10 @@ function renderCards(list) {
         card.className = `card`;
         card.style.backgroundColor = sub.color;
         card.innerText = sub.name;
-        card.onclick = () => window.location.href = `substances/${sub.name.toLowerCase().replace(/ /g, "_")}.html`;
+        card.onclick = () => {
+    const fileName = sub.name.toLowerCase().replace(/\s+/g, '-');
+    window.location.href = `substances/${fileName}.html`;
+};
         container.appendChild(card);
     });
     renderPagination(list.length);
