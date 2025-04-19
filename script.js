@@ -39,7 +39,9 @@ const substances = [
     { name: "Lorazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "Oxazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "Clonazepam", category: "Benzodiazepines", color: "#e6ccff" },
-    { name: "Fenetylline", category: "Drugs", color: "#f1948a" }
+    { name: "Fenetylline", category: "Drugs", color: "#f1948a" },
+    { name: "Barbital", category: "Barbiturates", color: "#fff0b3" },
+    { name: "Phenobarbital", category: "Barbiturates", color: "#fff0b3" }
 ];
 
 let currentLang = "en";
