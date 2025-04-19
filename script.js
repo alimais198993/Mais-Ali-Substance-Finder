@@ -31,7 +31,7 @@ const substances = [
     { name: "Methylamine", category: "Precursors", color: "#f0e68c" },
     { name: "APAAN", category: "Precursors", color: "#f0e68c" },
     { name: "N-acetylamphetamine", category: "Precursors", color: "#f0e68c" },
-    { name: "Acetic Anhydride", category: "Precursors", color: "#f0e68c" },
+    { name: "AceticAnhydride", category: "Precursors", color: "#f0e68c" },
     { name: "Formamide", category: "Precursors", color: "#f0e68c" },
     { name: "Diazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "Alprazolam", category: "Benzodiazepines", color: "#e6ccff" },
