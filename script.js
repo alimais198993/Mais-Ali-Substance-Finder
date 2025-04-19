@@ -10,6 +10,7 @@ const substances = [
     { name: "Ephedrine", category: "Drugs", color: "#f1948a" },
     { name: "Pseudoephedrine", category: "Drugs", color: "#f1948a" },
     { name: "Cathinone", category: "Stimulants", color: "#ffcccb" },
+    { name: "Methcathinone", category: "Stimulants", color: "#ffcccb" },
     { name: "Fenetylline", category: "Drugs", color: "#f1948a" }
 ];
 
