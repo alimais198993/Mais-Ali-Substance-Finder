@@ -34,6 +34,7 @@ const substances = [
     { name: "Acetic Anhydride", category: "Precursors", color: "#f0e68c" },
     { name: "Formamide", category: "Precursors", color: "#f0e68c" },
     { name: "Diazepam", category: "Benzodiazepines", color: "#e6ccff" },
+    { name: "Alprazolam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "Fenetylline", category: "Drugs", color: "#f1948a" }
 ];
 
