@@ -4,7 +4,8 @@ const itemsPerPage = 20;
 
 const substances = [
     { name: "Amphetamine", category: "Stimulants", color: "#ffcccb" },
-    { name: "Methamphetamine", category: "Stimulants", color: "#ffcccb" }
+    { name: "Methamphetamine", category: "Stimulants", color: "#ffcccb" },
+    { name: "MDMA", category: "Stimulants", color: "#ffcccb" }
 ];
 
 let currentLang = "en";
