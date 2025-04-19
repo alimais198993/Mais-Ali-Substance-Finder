@@ -43,6 +43,8 @@ const substances = [
     { name: "Barbital", category: "Barbiturates", color: "#fff0b3" },
     { name: "Amobarbital", category: "Barbiturates", color: "#fff0b3" },
     { name: "Secobarbital", category: "Barbiturates", color: "#fff0b3" },
+    { name: "Pentobarbital", category: "Barbiturates", color: "#fff0b3" },
+    { name: "Thiopental", category: "Barbiturates", color: "#fff0b3" },
     { name: "Phenobarbital", category: "Barbiturates", color: "#fff0b3" }
 ];
 
