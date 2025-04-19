@@ -1,3 +1,4 @@
+
 let currentPage = 1;
 const itemsPerPage = 20;
 
@@ -44,9 +45,9 @@ let filteredSubstances = [...substances];
 
 function toggleLanguage() {
     currentLang = currentLang === "en" ? "ar" : "en";
-    document.getElementById("langBtn").innerText = currentLang === "en" ? "العربية" : "English";
-    document.getElementById("title").innerText = currentLang === "en" ? "LCMS Substance Finder" : "باحث المواد التحليلية";
-    document.getElementById("searchBox").placeholder = currentLang === "en" ? "Search for a substance..." : "ابحث عن مادة...";
+    document.getElementById("langBtn").innerText = currentLang === "en" ? "Ř§ŮŘšŘąŘ¨ŮŘŠ" : "English";
+    document.getElementById("title").innerText = currentLang === "en" ? "LCMS Substance Finder" : "Ř¨Ř§Ř­ŘŤ Ř§ŮŮŮŘ§ŘŻ Ř§ŮŘŞŘ­ŮŮŮŮŘŠ";
+    document.getElementById("searchBox").placeholder = currentLang === "en" ? "Search for a substance..." : "Ř§Ř¨Ř­ŘŤ ŘšŮ ŮŘ§ŘŻŘŠ...";
     renderCards(filteredSubstances);
 }
 
@@ -70,20 +71,17 @@ function searchSubstances() {
 function renderCards(list) {
     const container = document.getElementById("cardsContainer");
     container.innerHTML = "";
-
     const start = (currentPage - 1) * itemsPerPage;
     const end = start + itemsPerPage;
     const paginatedList = list.slice(start, end);
-
     paginatedList.forEach(sub => {
         const card = document.createElement("div");
         card.className = `card`;
         card.style.backgroundColor = sub.color;
         card.innerText = sub.name;
-        card.onclick = () => window.location.href = `substances/${sub.name.toLowerCase()}.html`;
+        card.onclick = () => window.location.href = `substances/${sub.name.toLowerCase().replace(/ /g, "_")}.html`;
         container.appendChild(card);
     });
-
     renderPagination(list.length);
 }
 
@@ -91,7 +89,6 @@ function renderPagination(totalItems) {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
     const paginationContainer = document.getElementById("paginationContainer");
     paginationContainer.innerHTML = "";
-
     for (let i = 1; i <= totalPages; i++) {
         const btn = document.createElement("button");
         btn.innerText = i;
@@ -112,9 +109,7 @@ function filterByLetter(letter) {
         renderCards(substances);
         return;
     }
-    const results = substances.filter(s =>
-        s.name.toLowerCase().startsWith(letter.toLowerCase())
-    );
+    const results = substances.filter(s => s.name.toLowerCase().startsWith(letter.toLowerCase()));
     currentPage = 1;
     renderCards(results);
 }
