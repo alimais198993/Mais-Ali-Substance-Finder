@@ -45,6 +45,9 @@ const substances = [
     { name: "Secobarbital", category: "Barbiturates", color: "#fff0b3" },
     { name: "Pentobarbital", category: "Barbiturates", color: "#fff0b3" },
     { name: "Thiopental", category: "Barbiturates", color: "#fff0b3" },
+    { name: "Butalbital", category: "Barbiturates", color: "#fff0b3" },
+    { name: "Mephedrone", category: "Stimulants", color: "#ffcccb" },
+    { name: "Methylone", category: "Stimulants", color: "#ffcccb" },
     { name: "Phenobarbital", category: "Barbiturates", color: "#fff0b3" }
 ];
 
