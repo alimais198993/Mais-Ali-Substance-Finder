@@ -28,6 +28,7 @@ const substances = [
     { name: "P2NP", category: "Precursors", color: "#f0e68c" },
     { name: "N-formylamphetamine", category: "Precursors", color: "#f0e68c" },
     { name: "Phenylacetic Acid", category: "Precursors", color: "#f0e68c" },
+    { name: "Methylamine", category: "Precursors", color: "#f0e68c" },
     { name: "Fenetylline", category: "Drugs", color: "#f1948a" }
 ];
 
