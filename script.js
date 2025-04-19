@@ -14,6 +14,7 @@ const substances = [
     { name: "Bupropion", category: "Antidepressants", color: "#ffe0b3" },
     { name: "Methylphenidate", category: "Stimulants", color: "#ffcccb" },
     { name: "Modafinil", category: "Stimulants", color: "#ffcccb" },
+    { name: "Morphine", category: "Opioids", color: "#cce5ff" },
     { name: "Fenetylline", category: "Drugs", color: "#f1948a" }
 ];
 
