@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mais-Ali Substances Finder</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    .alphabet-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 5px;
+    }
+
+    .alphabet-buttons button {
+        background-color: #f0f8ff;
+        border: 1px solid #ccc;
+        color: #333;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .alphabet-buttons button:hover {
+        background-color: #cce5ff;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="toggleLanguage()" id="langBtn">العربية</button>
+        <h1 id="title">Mais-Ali Substances Finder</h1>
+        <input type="text" id="searchBox" placeholder="Search for a substance..." oninput="searchSubstances()">
+        <div class="filter-buttons">
+            <button onclick="filterCategory('All')">All</button>
+            <button onclick="filterCategory('Drugs')">Drugs of Abuse</button>
+            <button onclick="filterCategory('Prescription')">Prescription Drugs</button>
+            <button onclick="filterCategory('Toxins')">Poisons & Toxins</button>
+            <button onclick="filterCategory('Precursors')">Precursors / Reagents</button>
+            <div class="alphabet-buttons">
+                <button onclick="filterByLetter('All')">All</button>
+                <button onclick="filterByLetter('A')">A</button>
+                <button onclick="filterByLetter('B')">B</button>
+                <button onclick="filterByLetter('C')">C</button>
+                <button onclick="filterByLetter('D')">D</button>
+                <button onclick="filterByLetter('E')">E</button>
+                <button onclick="filterByLetter('F')">F</button>
+                <button onclick="filterByLetter('G')">G</button>
+                <button onclick="filterByLetter('H')">H</button>
+                <button onclick="filterByLetter('I')">I</button>
+                <button onclick="filterByLetter('J')">J</button>
+                <button onclick="filterByLetter('K')">K</button>
+                <button onclick="filterByLetter('L')">L</button>
+                <button onclick="filterByLetter('M')">M</button>
+                <button onclick="filterByLetter('N')">N</button>
+                <button onclick="filterByLetter('O')">O</button>
+                <button onclick="filterByLetter('P')">P</button>
+                <button onclick="filterByLetter('Q')">Q</button>
+                <button onclick="filterByLetter('R')">R</button>
+                <button onclick="filterByLetter('S')">S</button>
+                <button onclick="filterByLetter('T')">T</button>
+                <button onclick="filterByLetter('U')">U</button>
+                <button onclick="filterByLetter('V')">V</button>
+                <button onclick="filterByLetter('W')">W</button>
+                <button onclick="filterByLetter('X')">X</button>
+                <button onclick="filterByLetter('Y')">Y</button>
+                <button onclick="filterByLetter('Z')">Z</button>
+            </div>
+            <button onclick="window.location.href='reagents.html'">Reagents (الكواشف)</button>
+            <button onclick="window.location.href='tests.html'">Tests (التحاليل)</button>
+            <button onclick="window.location.href='mrm_settings.html'">LC-MRM Settings</button>
+        </div> 
+        <div id="cardsContainer" class="cards"></div>
+        <div id="pagination" class="pagination"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
