@@ -31,7 +31,6 @@ const substances = [
     { name: "ephedrine", category: "Stimulants", color: "#ffcccb" },
     { name: "ethylamphetamine", category: "Stimulants", color: "#ffcccb" },
     { name: "ethylone", category: "Uncategorized", color: "#d9d9d9" },
-    { name: "ethylone 2", category: "Uncategorized", color: "#d9d9d9" },
     { name: "fenetylline", category: "Uncategorized", color: "#d9d9d9" },
     { name: "fentanyl", category: "Opioids", color: "#cce5ff" },
     { name: "flephedrone", category: "Uncategorized", color: "#d9d9d9" },
