@@ -1,0 +1,138 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 20px;
+    direction: ltr;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-buttons button {
+    background-color: #2d89ef;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: #1b6ac9;
+}
+
+.alphabet-buttons button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    margin: 3px;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.alphabet-buttons button:hover {
+    background-color: #ddd;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    padding: 24px;
+    border-radius: 14px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+/* تحسين الألوان حسب التصنيف */
+.card[data-category="Opioids"]         { background-color: #2c82c9; }
+.card[data-category="Stimulants"]      { background-color: #e74c3c; }
+.card[data-category="Benzodiazepines"] { background-color: #9b59b6; }
+.card[data-category="Barbiturates"]    { background-color: #f39c12; }
+.card[data-category="Precursors"]      { background-color: #f4d03f; color: #333; }
+.card[data-category="Metabolites"]     { background-color: #e91e63; }
+.card[data-category="Other"]           { background-color: #7f8c8d; }
+.card[data-category="Uncategorized"]   { background-color: #b0bec5; }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 8px;
+}
+
+.pagination button {
+    background-color: #dcdde1;
+    border: none;
+    color: #2c3e50;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #bdc3c7;
+}
+
+.pagination button.active {
+    background-color: #2c3e50;
+    color: white;
+}
