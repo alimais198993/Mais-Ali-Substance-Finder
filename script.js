@@ -70,6 +70,7 @@ const substances = [
     { name: "pmma", category: "Other", color: "#d1d1e0" },
     { name: "pseudoephedrine", category: "Stimulants", color: "#ffcccb" },
     { name: "secobarbital", category: "Barbiturates", color: "#fff0b3" },
+    { name: "n-ethylhexedrone", category: "Stimulants", color: "#ffcccb" },
     { name: "thiopental", category: "Barbiturates", color: "#fff0b3" }
 ];
 
