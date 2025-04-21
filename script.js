@@ -7,7 +7,6 @@ const substances = [
     { name: "4-mta", category: "Other", color: "#d1d1e0" },
     { name: "aceticanhydride", category: "Precursors", color: "#f0e68c" },
     { name: "alpha-pvp", category: "Stimulants", color: "#ffcccb" },
-    { name: "alpha-pvp 2", category: "Stimulants", color: "#ffcccb" },
     { name: "alprazolam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "amobarbital", category: "Barbiturates", color: "#fff0b3" },
     { name: "amphetamine", category: "Stimulants", color: "#ffcccb" },
