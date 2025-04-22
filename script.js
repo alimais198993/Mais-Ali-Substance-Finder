@@ -8,6 +8,7 @@ const substances = [
     { name: "aceticanhydride", category: "Precursors", color: "#f0e68c" },
     { name: "alpha-pvp", category: "Stimulants", color: "#ffcccb" },
     { name: "naphyrone", category: "Stimulants", color: "#ffcccb" },
+    { name: "eutylone", category: "Stimulants", color: "#ffcccb" },
     { name: "alprazolam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "amobarbital", category: "Barbiturates", color: "#fff0b3" },
     { name: "amphetamine", category: "Stimulants", color: "#ffcccb" },
