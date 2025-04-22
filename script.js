@@ -7,6 +7,7 @@ const substances = [
     { name: "4-mta", category: "Other", color: "#d1d1e0" },
     { name: "oxazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "duloxetine", category: "Antidepressants", color: "#ffe0b3" },
+    { name: "aripiprazole", category: "Neuroleptics", color: "#d4e1fa" },
     { name: "mirtazapine", category: "Antidepressants", color: "#ffe0b3" },
     { name: "clonazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "sertraline", category: "Antidepressants", color: "#ffe0b3" },
