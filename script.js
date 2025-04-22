@@ -6,6 +6,7 @@ const substances = [
     { name: "4-hydroxyamphetamine", category: "Stimulants", color: "#ffcccb" },
     { name: "4-mta", category: "Other", color: "#d1d1e0" },
     { name: "aceticanhydride", category: "Precursors", color: "#f0e68c" },
+    { name: "zopiclone", category: "Hypnotics", color: "#f0e0f8" },
     { name: "zolpidem", category: "Hypnotics", color: "#f0e0f8" },
     { name: "risperidone", category: "Neuroleptics", color: "#d4e1fa" },
     { name: "olanzapine", category: "Neuroleptics", color: "#d4e1fa" },
