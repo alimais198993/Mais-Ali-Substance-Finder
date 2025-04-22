@@ -71,6 +71,7 @@ const substances = [
     { name: "pseudoephedrine", category: "Stimulants", color: "#ffcccb" },
     { name: "secobarbital", category: "Barbiturates", color: "#fff0b3" },
     { name: "n-ethylhexedrone", category: "Stimulants", color: "#ffcccb" },
+    { name: "3-mmc", category: "Stimulants", color: "#ffcccb" },
     { name: "thiopental", category: "Barbiturates", color: "#fff0b3" }
 ];
 
