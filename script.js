@@ -10,6 +10,7 @@ const substances = [
     { name: "naphyrone", category: "Stimulants", color: "#ffcccb" },
     { name: "eutylone", category: "Stimulants", color: "#ffcccb" },
     { name: "alprazolam", category: "Benzodiazepines", color: "#e6ccff" },
+    { name: "n-ethylpentylone", category: "Stimulants", color: "#ffcccb" },
     { name: "amobarbital", category: "Barbiturates", color: "#fff0b3" },
     { name: "amphetamine", category: "Stimulants", color: "#ffcccb" },
     { name: "apaan", category: "Uncategorized", color: "#d9d9d9" },
