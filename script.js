@@ -10,6 +10,7 @@ const substances = [
     { name: "zopiclone", category: "Hypnotics", color: "#f0e0f8" },
     { name: "zolpidem", category: "Hypnotics", color: "#f0e0f8" },
     { name: "risperidone", category: "Neuroleptics", color: "#d4e1fa" },
+    { name: "lorazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "olanzapine", category: "Neuroleptics", color: "#d4e1fa" },
     { name: "quetiapine", category: "Neuroleptics", color: "#d4e1fa" },
     { name: "tramadol", category: "Opioids", color: "#cce5ff" },
