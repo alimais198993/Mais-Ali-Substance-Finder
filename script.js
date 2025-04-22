@@ -9,6 +9,7 @@ const substances = [
     { name: "alpha-pvp", category: "Stimulants", color: "#ffcccb" },
     { name: "naphyrone", category: "Stimulants", color: "#ffcccb" },
     { name: "eutylone", category: "Stimulants", color: "#ffcccb" },
+    { name: "4-cec", category: "Stimulants", color: "#ffcccb" },
     { name: "alprazolam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "n-ethylpentylone", category: "Stimulants", color: "#ffcccb" },
     { name: "amobarbital", category: "Barbiturates", color: "#fff0b3" },
