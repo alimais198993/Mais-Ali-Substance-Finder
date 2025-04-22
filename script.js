@@ -10,6 +10,7 @@ const substances = [
     { name: "tapentadol", category: "Opioids", color: "#cce5ff" },
     { name: "temazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "aceticanhydride", category: "Precursors", color: "#f0e68c" },
+    { name: "eszopiclone", category: "Hypnotics", color: "#f0e0f8" },
     { name: "diazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "zopiclone", category: "Hypnotics", color: "#f0e0f8" },
     { name: "zolpidem", category: "Hypnotics", color: "#f0e0f8" },
