@@ -8,6 +8,7 @@ const substances = [
     { name: "aceticanhydride", category: "Precursors", color: "#f0e68c" },
     { name: "risperidone", category: "Neuroleptics", color: "#d4e1fa" },
     { name: "olanzapine", category: "Neuroleptics", color: "#d4e1fa" },
+    { name: "quetiapine", category: "Neuroleptics", color: "#d4e1fa" },
     { name: "amitriptyline", category: "Antidepressants", color: "#ffe0b3" },
     { name: "fluoxetine", category: "Antidepressants", color: "#ffe0b3" },
     { name: "haloperidol", category: "Neuroleptics", color: "#d4e1fa" },
