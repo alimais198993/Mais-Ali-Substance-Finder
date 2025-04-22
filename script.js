@@ -8,6 +8,7 @@ const substances = [
     { name: "oxazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "clonazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "sertraline", category: "Antidepressants", color: "#ffe0b3" },
+    { name: "venlafaxine", category: "Antidepressants", color: "#ffe0b3" },
     { name: "tapentadol", category: "Opioids", color: "#cce5ff" },
     { name: "temazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "aceticanhydride", category: "Precursors", color: "#f0e68c" },
