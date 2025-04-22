@@ -8,6 +8,7 @@ const substances = [
     { name: "aceticanhydride", category: "Precursors", color: "#f0e68c" },
     { name: "amitriptyline", category: "Antidepressants", color: "#ffe0b3" },
     { name: "fluoxetine", category: "Antidepressants", color: "#ffe0b3" },
+    { name: "haloperidol", category: "Neuroleptics", color: "#d4e1fa" },
     { name: "alpha-pvp", category: "Stimulants", color: "#ffcccb" },
     { name: "naphyrone", category: "Stimulants", color: "#ffcccb" },
     { name: "eutylone", category: "Stimulants", color: "#ffcccb" },
