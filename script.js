@@ -5,6 +5,7 @@ const itemsPerPage = 20;
 const substances = [
     { name: "4-hydroxyamphetamine", category: "Stimulants", color: "#ffcccb" },
     { name: "4-mta", category: "Other", color: "#d1d1e0" },
+    { name: "perphenazine", category: "Neuroleptics", color: "#d4e1fa" },
     { name: "chlorpromazine", category: "Neuroleptics", color: "#d4e1fa" },
     { name: "oxazepam", category: "Benzodiazepines", color: "#e6ccff" },
     { name: "duloxetine", category: "Antidepressants", color: "#ffe0b3" },
