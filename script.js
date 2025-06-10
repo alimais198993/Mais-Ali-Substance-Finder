@@ -5,6 +5,7 @@ const itemsPerPage = 20;
 const substances = [
     { name: "4-hydroxyamphetamine", category: "Stimulants", color: "#ffcccb" },
     { name: "4-mta", category: "Other", color: "#d1d1e0" },
+    { name: "adb-4c-mdmb-binaca", category: "Synthetic Cannabinoids", color: "#e0f8e0" },
     { name: "perphenazine", category: "Neuroleptics", color: "#d4e1fa" },
     { name: "triazolam", category: "Hypnotics", color: "#f0e0f8" },
     { name: "zaleplon", category: "Hypnotics", color: "#f0e0f8" },
